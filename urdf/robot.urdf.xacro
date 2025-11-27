@@ -161,4 +161,5 @@
         <material>Gazebo/Blue</material>
     </gazebo>
     <xacro:include filename="gazebo_control.xacro" />
+    <xacro:include filename="lidar.xacro" />
 </robot>

@@ -1,4 +1,4 @@
-# My Bot - ROS 2 Differential Drive Robot
+# ROS 2 Differential Drive Robot
 
 **(Türkçe ve İngilizce açıklama aşağıdadır / Turkish and English descriptions are below)**
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <model name="wall_back">
+      <pose>0 5 1 0 0 0</pose> <static>true</static>
+      <link name="link"><collision name="c"><geometry><box><size>10 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>10 0.2 2</size></box></geometry><material><script><name>Gazebo/Grey</name><uri>file://media/materials/scripts/gazebo.material</uri></script></material></visual></link>
+    </model>
+    <model name="wall_front">
+      <pose>0 -5 1 0 0 0</pose> <static>true</static>
+      <link name="link"><collision name="c"><geometry><box><size>10 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>10 0.2 2</size></box></geometry><material><script><name>Gazebo/Grey</name><uri>file://media/materials/scripts/gazebo.material</uri></script></material></visual></link>
+    </model>
+    <model name="wall_right">
+      <pose>5 0 1 0 0 0</pose> <static>true</static>
+      <link name="link"><collision name="c"><geometry><box><size>0.2 10 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 10 2</size></box></geometry><material><script><name>Gazebo/Grey</name><uri>file://media/materials/scripts/gazebo.material</uri></script></material></visual></link>
+    </model>
+    <model name="wall_left">
+      <pose>-5 0 1 0 0 0</pose> <static>true</static>
+      <link name="link"><collision name="c"><geometry><box><size>0.2 10 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 10 2</size></box></geometry><material><script><name>Gazebo/Grey</name><uri>file://media/materials/scripts/gazebo.material</uri></script></material></visual></link>
+    </model>
+
+    <model name="inner_wall_1">
+      <pose>2 2 1 0 0 0</pose> <static>true</static>
+      <link name="link"><collision name="c"><geometry><box><size>4 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>4 0.2 2</size></box></geometry><material><script><name>Gazebo/Wood</name><uri>file://media/materials/scripts/gazebo.material</uri></script></material></visual></link>
+    </model>
+
+    <model name="inner_wall_2">
+      <pose>-2 -2 1 0 0 0</pose> <static>true</static>
+      <link name="link"><collision name="c"><geometry><box><size>0.2 4 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 4 2</size></box></geometry><material><script><name>Gazebo/Wood</name><uri>file://media/materials/scripts/gazebo.material</uri></script></material></visual></link>
+    </model>
+
+    <model name="inner_wall_3">
+      <pose>-3 3 1 0 0 0</pose> <static>true</static>
+      <link name="link"><collision name="c"><geometry><box><size>2 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>2 0.2 2</size></box></geometry><material><script><name>Gazebo/Wood</name><uri>file://media/materials/scripts/gazebo.material</uri></script></material></visual></link>
+    </model>
+
+  </world>
+</sdf>
